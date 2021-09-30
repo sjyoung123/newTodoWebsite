@@ -1,3 +1,28 @@
+@import "css/weather.css";
+@import "css/quote.css";
+@import "css/todo.css";
+@import "css/search.css";
+
 .hidden {
   display: none;
+}
+body {
+  height: 100vh;
+  position: relative;
+  color: ghostwhite;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Architects Daughter", cursive;
+  user-select: none;
+}
+
+input {
+  font-family: "Nanum Pen Script", cursive;
+}
+
+input:focus {
+  outline: none;
 }

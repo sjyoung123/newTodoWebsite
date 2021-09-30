@@ -6,6 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Fira+Sans&family=Nanum+Pen+Script&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/cfdd659331.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <form id="login-form" class="hidden">
@@ -16,6 +26,21 @@
         placeholder="What is your name?"
       />
       <input type="submit" value="Log-in" />
+    </form>
+    <form class="search-form">
+      <i class="fas fa-search"></i>
+      <input
+        type="text"
+        class="search__input"
+        maxlength="100"
+        placeholder="Search and Enter!"
+      />
+      <select class="search__options">
+        <option value="Google">Google</option>
+        <option value="Naver">Naver</option>
+        <option value="Google-new">Google newTap</option>
+        <option value="Naver-new">Naver newTap</option>
+      </select>
     </form>
     <h2 id="clock">00:00:00</h2>
 
@@ -28,9 +53,15 @@
         required
       />
     </form>
+
     <ul id="todo-list"></ul>
 
     <div id="quotes">
+      <span></span>
+      <span></span>
+    </div>
+
+    <div id="weather">
       <span></span>
       <span></span>
     </div>
@@ -40,5 +71,7 @@
     <script src="js/quotes.js"></script>
     <script src="js/background.js"></script>
     <script src="js/todo.js"></script>
+    <script src="js/weather.js"></script>
+    <script src="js/search.js"></script>
   </body>
 </html>

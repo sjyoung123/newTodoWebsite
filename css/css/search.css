@@ -1,0 +1,19 @@
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  color: ghostwhite;
+  border: none;
+
+  font-family: "Fira Sans", sans-serif;
+}
+select::-ms-expand {
+  display: none;
+}
+select:focus {
+  outline: none;
+}
+option {
+  background-color: #9e9e9e;
+}
