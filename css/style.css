@@ -2,6 +2,7 @@
 @import "css/quote.css";
 @import "css/todo.css";
 @import "css/search.css";
+@import "css/logIn.css";
 
 .hidden {
   display: none;
@@ -25,4 +26,7 @@ input {
 
 input:focus {
   outline: none;
+}
+* {
+  box-sizing: border-box;
 }

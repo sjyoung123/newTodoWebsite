@@ -1,19 +1,23 @@
+#todo-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 #todo-list {
-  height: 25%;
-  width: 12%;
+  height: 280px;
+  width: 340px;
   overflow: scroll;
   font-family: "Nanum Pen Script", cursive;
   font-size: 30px;
 }
 
-#todo-form {
-}
 #todo-form input {
   padding: 10px;
   height: 30px;
-  width: 220px;
+  width: 340px;
   border: none;
-  font-size: 20px;
+  font-size: 30px;
   background-color: transparent;
   border-bottom: 2px solid ghostwhite;
   color: ghostwhite;
@@ -35,4 +39,9 @@
 }
 #todo-list i:hover {
   cursor: pointer;
+}
+.todo__span {
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 40px;
 }
