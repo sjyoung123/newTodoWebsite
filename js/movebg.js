@@ -16,4 +16,6 @@ player.play();
 if(chosenVideo==="video2.mp4"){
     weather.style = "color:black";
     searchOption.style = "color:black";
+}else if(chosenVideo ==="video3.mp4"){
+    todoList.style = "color:#7A7758";
 }
