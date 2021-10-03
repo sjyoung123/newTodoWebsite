@@ -10,7 +10,12 @@ function getClock(){
     const hours =String( date.getHours()).padStart(2,"0");
     const minutes = String(date.getMinutes()).padStart(2,"0");
     const seconds = String(date.getSeconds()).padStart(2,"0");
-    clock.innerText = `${hours}:${minutes}:${seconds}`;
+    const intHours = parseInt(hours);
+    if(intHours >= 12){
+        clock.innerText = `${String(intHours-12).padStart(2,"0")}:${minutes}:${seconds} PM`;
+    }else{
+        clock.innerText = `${hours}:${minutes}:${seconds} AM`;
+    }
 }
 getClock();
 setInterval(getClock, 1000);
