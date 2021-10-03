@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="shortcut icon" href="img/dino.png" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>My Todo Website</title>
     <link rel="stylesheet" href="css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -26,6 +27,7 @@
           maxlength="20"
           type="text"
           placeholder="What is your name?"
+          spellcheck="false"
         />
         <input type="submit" value="Log-in" class="login-form__submit" />
       </div>
@@ -41,6 +43,7 @@
         class="search__input"
         maxlength="100"
         placeholder="Search and Enter!"
+        spellcheck="false"
       />
       <select class="search__options">
         <option value="Google">Google</option>
@@ -58,6 +61,7 @@
         type="text"
         placeholder="Write a To Do and Press Enter!"
         required
+        spellcheck="false"
       />
     </form>
 
@@ -73,6 +77,11 @@
       <span></span>
       <span></span>
     </div>
+    <div>
+      <video autoplay loop muted class="wallpaper">
+        <source id="video-src" src="#" type="video/mp4" />
+      </video>
+    </div>
 
     <script src="js/app.js"></script>
     <script src="js/clock.js"></script>
@@ -81,5 +90,6 @@
     <script src="js/todo.js"></script>
     <script src="js/weather.js"></script>
     <script src="js/search.js"></script>
+    <script src="js/movebg.js"></script>
   </body>
 </html>
